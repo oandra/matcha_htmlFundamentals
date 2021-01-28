@@ -1,0 +1,30 @@
+
+
+body{
+    background-color: #fffbf7;
+}
+
+h1{
+    color: #025157;
+}
+
+.subtitulo{
+    color: #46484c;
+}
+
+.promo{
+    color: #8b8b8bcc;
+}
+
+
+
+form .btn-try{
+    color: #fff;
+    background-color: #025157;
+    border-radius: 15px;
+}
+
+form .inp-email{
+    
+}
+
