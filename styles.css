@@ -1,46 +1,102 @@
-
-
-body{
+body {
     background-color: #fffbf7;
-}
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans";
+  }
 
-h1{
+  .header{
+      margin: 40px 20px 0;
+      font-size: 0;
+      text-align: center;
+  }
+
+  .header > *{
+      display: inline-block;
+      font-size: 16px;
+  }
+
+  ul{
+      padding: 0 10px;
+  }
+
+  .header li{
+      display: inline;
+      padding: 8px;
+  }
+
+  .logo{
+      width: 15%;
+      text-align: left;
+  }
+
+  .navbar{
+      width: 70%;
+      color: #025157;
+      font-weight: 500;
+  }
+
+  .actions{
+      width: 15%;
+      text-align: right;
+      font-size: 14px;
+      font-weight: 700;
+  }
+
+  .actions a{
+      color: #67b54b
+  }
+
+  .actions > *{
+      margin: 0 10px;
+  }
+
+  .actions button{
+      border: none;
+      background-color: #67b54b;
+      border-radius: 5px;
+      color: #ffffff;
+      padding: 20px 24px;
+  }
+
+  .main {
+    margin-top: 140px;
+    padding: 10px;
+    text-align: center;
+  }
+  .main h1 {
     color: #025157;
-}
-
-.subtitulo{
+    font-weight: 900;
+    font-size: 60px;
+    font-family: "Alegreya", serif;
+  }
+  .texto-gris {
     color: #46484c;
-}
-
-.promo{
-    color: #8b8b8bcc;
-}
-
-
-form .btn-try{
+  }
+  .main form button {
     color: #fff;
     background-color: #025157;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-style: none;
-    margin-left: 0px;
-    height: 55px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    font-size: 15px;
-}
-
-form .inp-email{
-    box-sizing: border-box;
-    margin-right: 0px;
-    height: 55px;
-    border-color: #b6b6b6;
-    border-style: solid;
-    border-width: .5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 20px;
-    font-size: 15px;
-}
-
+    height: 47px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+  }
+  .main form input {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    height: 45px;
+    margin-right: -5px;
+    border: 1px solid #c6c6c6;
+    padding: 0 5px;
+  }
+  .main .grey-text {
+    color: #a6a6a6;
+    margin-bottom: 5px;
+  }
+  .main .banner {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .main .second-image {
+    width: 70%;
+  }
