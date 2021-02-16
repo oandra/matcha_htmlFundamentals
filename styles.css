@@ -1,9 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #fffbf7;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fffbf7;
   }
+
+
 
   .fixed-header{
     position: fixed;
@@ -14,7 +26,7 @@ body {
   }
 
   .header{
-      margin: 40px 20px 0;
+      margin: 10px 20px;
       font-size: 0;
       text-align: center;
   }
@@ -170,3 +182,348 @@ body {
   .publish{
     flex: 1;
   }
+
+  .success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  .overview{
+    display: flex;
+    flex-flow: column;
+    padding-right: 100px;
+    flex: 2;
+  }
+
+  .overview > * {
+    margin-bottom: 1rem;
+  }
+
+  .overview img{
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 61px;
+    color: #025157;
+}
+
+  .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.overview figure{
+  margin-top: 32px;
+}
+
+  .stories-carousel{
+    flex: 1;
+  }
+
+  .overview button{
+    background-color: #025157;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 6px;
+    font-size: 14px;
+    height: 45px;
+    border: none;
+    width: 150px;
+  }
+
+  .stories-carousel{
+    flex: 1;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .card-body{
+    margin: 20px;
+  }
+
+  .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+
+  .card-body h3{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+    
+  }
+
+  .img-story{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+.company {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  carousel .card .card-media .company img {
+    max-width: 75%;
+}
+
+  .card-footer{
+    margin: 20px;
+  }
+
+  .card-footer button{
+    border-radius: 5px;
+    border: none;
+    padding: 12px 20px;
+    background-color: #025157;
+    color: #ffffff;
+    justify-content: space-around;
+  }
+
+  .results {
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+.success-stories .stories-carousel .card .card-body .results img {
+  width: 26px;
+  margin-right: 20px;
+}
+  
+  .results p{
+    flex: 1;
+    color: #8b8b8bcc;
+  }
+
+.features{
+  background-color: #025157;
+  display: grid;
+  grid-template: repeat(2, 330px) / repeat(2, 1fr);
+  padding: 5% 10%;
+}
+
+.features .feature-card {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.feature-content {
+  padding: 30px 20px 40px 40px;
+  flex: 2;
+}
+
+.feature-image{
+  flex: 1;
+}
+
+.features .feature-card .feature-content > * {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.feature-content h3{
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+
+.feature-content p{
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+
+.feature-content a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+}
+
+.feature-content figure{
+  margin: 0px;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+.feature-content img{
+  width: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-image {
+  flex: 1;
+  width: 40%;
+  position: relative;
+  right: -50px;
+  height: 80%;
+  transition: right .5s;
+}
+
+.feature-image:hover{
+  right: -20px;
+}
+
+.feature-image figure{
+  margin: 0px;
+}
+
+.feature-image img{
+  position: relative;
+  height: 250px;
+}
+
+.card-footer button{
+  width: 100%;
+}
+
+
+
+.how-does-it{
+  padding: 5% 10%;
+  background-color: #fffbf7;
+  text-align: center;
+}
+
+.how-does-it .title{
+  color: #025157;
+  font-family: "Alegreya", serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.how-does-it .description{
+  font-size: 18px;
+  color: #46484c;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.how-does-it button{
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  height: 45px;
+  padding: 6px 20px;
+  border-radius: 8px;
+}
+
+.how-does-it .steps {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.how-does-it .card-step{
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+}
+
+
+
+@media (max-width: 425px){
+  .navbar,
+  .actions{
+    display: none;
+  }
+
+  .logo{
+    display: initial;
+  }
+
+  .main{
+    margin-top: 60px;
+  }
+
+  .main h1{
+    font-size: 30px;
+  }
+
+  .main .banner > img{
+    width: 100%;
+  }
+  
+  .banner .second-image{
+    display: none;
+  }
+  
+  .promo{
+  flex-direction: column;
+  width: 90%;
+  }
+
+  .promo .explanatory-video > video{
+    width: 100%;
+  }
+
+  .promo .publish > h3{
+    font-size: 25px;
+    line-height: 1.2;
+    margin-top: 25px;
+  }
+
+  .promo .publish .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features{
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding: 5% 0;
+  }
+
+  .features .feature-image{
+    display: none;
+  }
+
+
+
+}
+
+
+
